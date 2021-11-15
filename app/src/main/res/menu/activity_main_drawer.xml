@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_calender" />
+        <item
+            android:id="@+id/nav_lockout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_lockout" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_events" />
+        <item
+            android:id="@+id/nav_scheduler"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_scheduler" />
+        <item
+            android:id="@+id/nav_lunch"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_lunch" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_settings" />
+
+    </group>
+</menu>

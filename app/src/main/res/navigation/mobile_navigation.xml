@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.a11_9project.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.a11_9project.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.a11_9project.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calender"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_lockout"
+        android:name="com.example.a11_9project.ui.lockout.LockoutFragment"
+        android:label="@string/menu_lockout"
+        tools:layout="@layout/fragment_lockout" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.a11_9project.ui.events.EventsFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/nav_scheduler"
+        android:name="com.example.a11_9project.ui.schedule.ScheduleFragment"
+        android:label="@string/menu_scheduler"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/nav_lunch"
+        android:name="com.example.a11_9project.ui.lunch.LunchFragment"
+        android:label="@string/menu_lunch"
+        tools:layout="@layout/fragment_lunch" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.a11_9project.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_lockout" />
+
+
+</navigation>

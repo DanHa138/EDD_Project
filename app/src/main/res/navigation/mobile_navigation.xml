@@ -35,7 +35,7 @@
         android:label="@string/menu_events"
         tools:layout="@layout/fragment_events" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_scheduler"
         android:name="com.example.a11_9project.ui.schedule.ScheduleFragment"
         android:label="@string/menu_scheduler"

@@ -15,6 +15,11 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.119Project.NoActionBar"/>
         <activity
+            android:name=".ui.schedule.ScheduleFragment"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.119Project.NoActionBar"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:label="@string/app_name"

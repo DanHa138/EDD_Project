@@ -20,6 +20,11 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.119Project.NoActionBar"/>
         <activity
+            android:name=".ui.lockout.LockoutFragment"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/FullScreen"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:label="@string/app_name"

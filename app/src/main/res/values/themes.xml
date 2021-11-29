@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="DialogStyle" parent = "Theme.Design.Light.BottomSheetDialog">
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
@@ -25,7 +25,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="FullScreen" parent="Theme.119Project">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <style name="Theme.119Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.119Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

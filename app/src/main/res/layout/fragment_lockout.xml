@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:id="@+id/normal_layout"
             android:gravity="center">
 
             <ImageView
@@ -35,17 +36,17 @@
                 android:id="@+id/app_icon"/>
             
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="left"
+                android:gravity="start"
                 android:orientation="vertical">
                 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="protected by"
-                    android:textSize="10sp"/>
+                    android:textSize="11sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -71,17 +72,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_centerInParent="true"
         android:gravity="center"
-        android:layout_centerInParent="true">
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/status_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/status_password"
-            android:padding="20dp"/>
-        
+            android:padding="20dp" />
+
         <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/pattern_view"
             android:layout_width="250dp"
             android:layout_height="300dp"
             android:layout_margin="5dp"
@@ -90,8 +92,7 @@
             app:dotNormalSize="10sp"
             app:dotSelectedSize="12dp"
             app:normalStateColor="@android:color/darker_gray"
-            app:pathWidth="8dp"
-            android:id="@+id/pattern_view"/>
+            app:pathWidth="8dp" />
     </LinearLayout>
 
 </RelativeLayout>

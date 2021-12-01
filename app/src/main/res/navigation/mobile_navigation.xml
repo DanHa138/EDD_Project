@@ -23,7 +23,7 @@
         android:label="@string/menu_calender"
         tools:layout="@layout/fragment_calendar" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_lockout"
         android:name="com.example.a11_9project.ui.lockout.LockoutFragment"
         android:label="@string/menu_lockout"

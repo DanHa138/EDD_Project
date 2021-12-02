@@ -114,7 +114,7 @@ public class LockoutFragment extends AppCompatActivity {
 
     private void startAct() {
 
-        startActivity(new Intent(this, LockoutFragment.class));
+        startActivity(new Intent(this, AppList.class));
         finish();
 
     }
@@ -128,7 +128,7 @@ public class LockoutFragment extends AppCompatActivity {
         utilsBlock = new BlockerModel(this);
         status_password.setText(utilsBlock.STATUS_FIRST_STEP);
 
-        if(utilsBlock.getPassword() == null){
+        if(utilsBlock.getPassword() == null){   
             normalLayout.setVisibility(View.GONE);
             stepView.setVisibility(View.VISIBLE);
             stepView.setStepsNumber(2);

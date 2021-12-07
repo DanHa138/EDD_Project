@@ -82,9 +82,11 @@ public class Utils {
         ActivityManager manager = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
             usageStatsManager = (UsageStatsManager)context.getSystemService(Context.USAGE_STATS_SERVICE);
 
-        List<ActivityManager.RunningTaskInfo> taskInfoList = manager.getRunningTasks(1);
-        if (null != taskInfoList && !taskInfoList.isEmpty()) {
-            return taskInfoList.get(0).topActivity.getPackageName();
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            List<ActivityManager.RunningTaskInfo> taskInfoList = manager.getRunningTasks(1);
+            if (null != taskInfoList && !taskInfoList.isEmpty()) {
+                return taskInfoList.get(0).topActivity.getPackageName();
+            }
         }
         else {
             long endTime = System.currentTimeMillis();

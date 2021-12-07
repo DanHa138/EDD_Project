@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import com.example.a11_9project.R;
 import com.example.a11_9project.ui.lockout.Adapter.AppAdapters;
 import com.example.a11_9project.ui.lockout.Model.AppItem;
+import com.example.a11_9project.ui.lockout.Services.BackgroundManager;
 import com.example.a11_9project.ui.lockout.Utils.Utils;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -38,6 +39,7 @@ import java.util.List;
 public class AppList extends AppCompatActivity{
 
     LinearLayout layout_permission;
+    BackgroundManager backgroundManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,9 @@ public class AppList extends AppCompatActivity{
         initToolbar();
 
         initView();
+
+        BackgroundManager.getInstance().init(this).startService();
+        BackgroundManager.getInstance().init(this).startAlarmManager();
     }
 
     private void initView() {
@@ -72,7 +77,8 @@ public class AppList extends AppCompatActivity{
 
         for(ResolveInfo resolveInfo : resolveInfoList){
             ActivityInfo activityInfo = resolveInfo.activityInfo;
-            results.add(new AppItem(activityInfo.loadIcon(pk), activityInfo.loadLabel(pk).toString(), activityInfo.packageName));
+            if(!activityInfo.loadLabel(pk).toString().equals("11-9 Project"))
+                results.add(new AppItem(activityInfo.loadIcon(pk), activityInfo.loadLabel(pk).toString(), activityInfo.packageName));
         }
 
         return results;

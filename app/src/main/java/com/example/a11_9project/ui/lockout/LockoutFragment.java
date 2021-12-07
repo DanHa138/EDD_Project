@@ -1,11 +1,17 @@
 package com.example.a11_9project.ui.lockout;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -24,6 +30,8 @@ import com.andrognito.patternlockview.utils.PatternLockUtils;
 import com.example.a11_9project.R;
 import com.example.a11_9project.databinding.FragmentLockoutBinding;
 import com.example.a11_9project.ui.lockout.Model.BlockerModel;
+import com.example.a11_9project.ui.lockout.Services.BackgroundManager;
+import com.example.a11_9project.ui.lockout.Utils.Utils;
 import com.shuhart.stepview.StepView;
 
 import java.util.List;
@@ -44,9 +52,44 @@ public class LockoutFragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_lockout);
 
+        BackgroundManager.getInstance().init(this).startService();
+
+        initIconApp();
         initLayout();
 
         initPatternListener();
+    }
+
+    private void startAct() {
+
+        if(getIntent().getStringExtra("broadcast_receiver") == null){
+            startActivity(new Intent(this, AppList.class));
+        }
+
+        Intent startMain = new Intent(Intent.ACTION_MAIN);
+        startMain.addCategory(Intent.CATEGORY_HOME);
+        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(startMain);
+
+    }
+
+    private void initIconApp() {
+
+        if(getIntent().getStringExtra("broadcast_receiver") != null) {
+
+            ImageView icon = findViewById(R.id.app_icon);
+            String current_app = new Utils(this).getLastApp();
+            ApplicationInfo applicationInfo = null;
+            try {
+                applicationInfo = getPackageManager().getApplicationInfo(current_app, 0);
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            icon.setImageDrawable(applicationInfo.loadIcon(getPackageManager()));
+
+        }
+
     }
 
     private void initPatternListener() {
@@ -112,12 +155,7 @@ public class LockoutFragment extends AppCompatActivity {
         });
     }
 
-    private void startAct() {
 
-        startActivity(new Intent(this, AppList.class));
-        finish();
-
-    }
 
     private void initLayout() {
 
@@ -152,8 +190,24 @@ public class LockoutFragment extends AppCompatActivity {
             status_password.setText(utilsBlock.STATUS_FIRST_STEP);
         }
         else{
+            startCurrentHomePackage();
             finish();
             super.onBackPressed();
         }
+    }
+
+    private void startCurrentHomePackage() {
+
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        ResolveInfo resolveInfo = getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY);
+
+        ActivityInfo activityInfo = resolveInfo.activityInfo;
+        ComponentName componentName = new ComponentName(activityInfo.applicationInfo.packageName, activityInfo.name);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+        startActivity(intent);
+
+        new Utils(this).clearLastApp();
+
     }
 }

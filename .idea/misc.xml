@@ -25,7 +25,7 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/app_layout.xml" value="0.24592391304347827" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main2.xml" value="0.16869300911854104" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_calendar.xml" value="0.6" />
+        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_calendar.xml" value="0.5" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_events.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_first.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_gallery.xml" value="0.16869300911854104" />
@@ -45,22 +45,6 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/xml/root_preferences.xml" value="0.1816123188405797" />
-        <entry key="..\:/Users/super/.gradle/caches/transforms-3/7c406f4b71c168b2a4c2e957390458f6/transformed/jetified-calendar-1.0/res/layout/fragement.xml" value="0.1" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_login.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/app_bar_main.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/content_main.xml" value="0.1" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar.xml" value="0.264" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar_details.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_gallery.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_google.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_lockout.xml" value="0.1" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_settings.xml" value="0.6" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/nav_header_main.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/new_task.xml" value="0.1" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/menu/main.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -25,7 +25,7 @@
 
     <activity
         android:id="@+id/nav_lockout"
-        android:name="com.example.a11_9project.ui.lockout.LockoutFragment"
+        android:name="com.example.a11_9project.ui.lockout.AppList"
         android:label="@string/menu_lockout"
         tools:layout="@layout/fragment_lockout" />
 

@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.a11_9project">
 
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions"/>
 
@@ -18,7 +22,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.119Project">
+        android:theme="@style/FullScreen">
         <activity
             android:name=".MainActivity"
             android:exported="false"
@@ -35,15 +39,9 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.119Project.NoActionBar"/>
         <activity
-            android:name=".ui.lockout.LockoutFragment"
-            android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/FullScreen"/>
+            android:name=".ui.lockout.LockoutFragment" />
         <activity
-            android:name=".ui.lockout.AppList"
-            android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/FullScreen"/>
+            android:name=".ui.lockout.AppList" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -55,6 +53,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".ui.lockout.Broadcast.ReceiverAppBlock"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".ui.lockout.Broadcast.RestartServiceWhenStopped"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
+        <service android:name=".ui.lockout.Services.ServiceAppBlock"
+            android:exported="false"
+            android:enabled="true"/>
+        
+        <service android:name=".ui.lockout.Services.ServiceAppBlockJobIntent"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
 
 </manifest>

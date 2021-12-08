@@ -156,10 +156,10 @@ public class CalendarFragment extends Fragment{
                 // 0 = January, 1 = February, ...
 
                 java.util.Calendar startTime = java.util.Calendar.getInstance();
-                startTime.set(year,month,dayOfMonth,00,00);
+                startTime.set(year,month,dayOfMonth-1,00,00);
 
                 java.util.Calendar endTime= java.util.Calendar.getInstance();
-                endTime.set(year,month,dayOfMonth+1,00,00);
+                endTime.set(year,month,dayOfMonth,00,00);
 
                 // the range is based on the click date
 
@@ -176,7 +176,7 @@ public class CalendarFragment extends Fragment{
                 if (cursor.moveToFirst()) {
                     do {
                         String event = "Title: " + cursor.getString(1)
-                                + " Due Date: " + (new Date(cursor.getLong(4)))
+                                + " Due Date: " + (new Date(cursor.getLong(3)))
                                 .toString();
                         String data = cursor.getString(2);
                         boolean inAlready = false;
@@ -222,10 +222,18 @@ public class CalendarFragment extends Fragment{
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getActivity(), CalendarDetails.class);
-                i.putExtra("title", eventsList.get(position));
-                i.putExtra("data", dayEvents.get(position));
-                startActivity(i);
+                if(dayEvents.size() > 0)
+                {
+                    Intent i = new Intent(getActivity(), CalendarDetails.class);
+                    i.putExtra("title", eventsList.get(position));
+                    i.putExtra("data", dayEvents.get(position));
+                    startActivity(i);
+                }
+                else
+                {
+                    Toast.makeText( view.getContext().getApplicationContext(), "There is no available event", Toast.LENGTH_LONG ).show();
+                }
+
             }
         });
 

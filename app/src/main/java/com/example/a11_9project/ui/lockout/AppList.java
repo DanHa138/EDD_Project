@@ -77,7 +77,7 @@ public class AppList extends AppCompatActivity{
 
         for(ResolveInfo resolveInfo : resolveInfoList){
             ActivityInfo activityInfo = resolveInfo.activityInfo;
-            if(!activityInfo.loadLabel(pk).toString().equals("11-9 Project"))
+            if(!activityInfo.loadLabel(pk).toString().equals("Companion App"))
                 results.add(new AppItem(activityInfo.loadIcon(pk), activityInfo.loadLabel(pk).toString(), activityInfo.packageName));
         }
 

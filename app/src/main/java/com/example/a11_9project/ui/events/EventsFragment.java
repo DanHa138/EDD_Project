@@ -49,8 +49,7 @@ public class EventsFragment extends AppCompatActivity {
                 new int[]{R.id.text1, R.id.text2});
 
         Iterator it = nameAddresses.entrySet().iterator();
-        while(it.hasNext())
-        {
+        while(it.hasNext()) {
             HashMap<String, String> resultsMap = new HashMap<>();
             Map.Entry pair = (Map.Entry)it.next();
             resultsMap.put("First Line", pair.getKey().toString());

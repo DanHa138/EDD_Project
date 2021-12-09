@@ -10,9 +10,10 @@
     tools:context=".ui.gallery.GalleryFragment">
 
     <ListView
+        android:id="@+id/results_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/results_listview">
+        android:layout_gravity="bottom">
 
 
     </ListView>

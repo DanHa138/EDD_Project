@@ -29,7 +29,7 @@
         android:label="@string/menu_lockout"
         tools:layout="@layout/fragment_lockout" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_events"
         android:name="com.example.a11_9project.ui.events.EventsFragment"
         android:label="@string/menu_events"

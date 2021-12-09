@@ -26,7 +26,7 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main2.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_calendar.xml" value="0.5" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_events.xml" value="0.16869300911854104" />
+        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_events.xml" value="0.5" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_first.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_gallery.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_home.xml" value="0.1693840579710145" />
@@ -37,6 +37,7 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_settings.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_slideshow.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/layout_apps.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/list_item.xml" value="0.19375" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/nav_header_main.xml" value="0.1816123188405797" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/new_task.xml" value="0.1921875" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/task_layout.xml" value="0.6" />
@@ -45,8 +46,6 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/xml/root_preferences.xml" value="0.1816123188405797" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_home.xml" value="0.10260416666666666" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_settings.xml" value="0.536" />
       </map>
     </option>
   </component>

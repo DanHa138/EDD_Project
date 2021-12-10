@@ -51,7 +51,7 @@
         android:id="@+id/nav_settings"
         android:name="com.example.a11_9project.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_lockout" />
+        tools:layout="@layout/fragment_settings" />
 
 
 </navigation>

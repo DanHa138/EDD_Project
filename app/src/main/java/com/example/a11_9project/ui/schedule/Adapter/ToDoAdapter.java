@@ -96,6 +96,7 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
         AddNewTask fragment = new AddNewTask();
         fragment.setArguments(bundle);
         fragment.show(activity.getSupportFragmentManager(), AddNewTask.TAG);
+                //.getSupportFragmentManager()
     }
 
     //Declares ViewHolder class with checkboxes as tasks

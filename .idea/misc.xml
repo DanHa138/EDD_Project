@@ -5,16 +5,9 @@
       <map>
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23072916666666668" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/btn_on_click.xml" value="0.20989583333333334" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_access_time.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_access_time_filled_.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_add.xml" value="0.20989583333333334" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_calendar_today.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_edit.xml" value="0.20989583333333334" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_format_list_bulleted.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_home.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_lock_open.xml" value="0.20989583333333334" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_school.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_baseline_settings.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23072916666666668" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_loading.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/drawable/ic_loading__1_.xml" value="0.22" />
@@ -33,7 +26,7 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/content_main2.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_calendar.xml" value="0.5" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_events.xml" value="0.321285140562249" />
+        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_events.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_first.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_gallery.xml" value="0.16869300911854104" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_home.xml" value="0.1693840579710145" />
@@ -44,7 +37,6 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_settings.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/fragment_slideshow.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/layout_apps.xml" value="0.24592391304347827" />
-        <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/list_item.xml" value="0.19375" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/nav_header_main.xml" value="0.1816123188405797" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/new_task.xml" value="0.1921875" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/layout/task_layout.xml" value="0.6" />
@@ -53,6 +45,27 @@
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/danha/AndroidStudioProjects/119Project/app/src/main/res/xml/root_preferences.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/addcalendar.xml" value="0.4" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/app_bar_main.xml" value="0.176" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/app_layout.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/calendarlist.xml" value="0.264" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar.xml" value="0.2" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar_details.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_events.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_gallery.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_home.xml" value="0.12833876221498372" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_schedule.xml" value="0.25" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_settings.xml" value="0.536" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/new_task.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/task_layout.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/menu/activity_main_drawer.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/menu/main.xml" value="0.264" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/xml/root_preferences.xml" value="0.176" />
       </map>
     </option>
   </component>

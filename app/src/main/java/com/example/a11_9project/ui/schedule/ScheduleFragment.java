@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -43,7 +44,116 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/*
 public class ScheduleFragment extends AppCompatActivity implements DialogCloseListener{
+
+    private RecyclerView tasksRecyclerView;
+    private ToDoAdapter tasksAdapter;
+    private FloatingActionButton fab;
+
+    private List<ToDoModel> taskList;
+    private DatabaseHandler db;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_schedule);
+
+        db = new DatabaseHandler(this);
+        db.openDatabase();
+
+        taskList = new ArrayList<>();
+
+        tasksRecyclerView = findViewById(R.id.todoRecyclerView);
+        tasksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        tasksAdapter = new ToDoAdapter(db, this);
+        tasksRecyclerView.setAdapter(tasksAdapter);
+
+        fab = findViewById(R.id.fab);
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
+        itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
+
+        taskList = db.getAllTasks();
+        Collections.reverse(taskList);
+        tasksAdapter.setTask(taskList);
+
+        fab.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                AddNewTask.newInstance().show(getSupportFragmentManager(), AddNewTask.TAG);
+            }
+        });
+    }
+
+    @Override
+    public void handleDialogClose(DialogInterface dialog){
+        taskList = db.getAllTasks();
+        Collections.reverse(taskList);
+        tasksAdapter.setTask(taskList);
+        tasksAdapter.notifyDataSetChanged();
+    }
+}
+
+
+ */
+/*
+public class ScheduleFragment extends FragmentActivity implements DialogCloseListener{
+
+    private RecyclerView tasksRecyclerView;
+    private ToDoAdapter tasksAdapter;
+    private FloatingActionButton fab;
+
+    private List<ToDoModel> taskList;
+    private DatabaseHandler db;
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        //View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_schedule, container, false);
+
+        db = new DatabaseHandler(this);
+        db.openDatabase();
+
+        taskList = new ArrayList<>();
+
+        tasksRecyclerView = root.findViewById(R.id.todoRecyclerView);
+        tasksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        tasksAdapter = new ToDoAdapter(db, this);
+        tasksRecyclerView.setAdapter(tasksAdapter);
+
+        fab = root.findViewById(R.id.fab);
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
+        itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
+
+        taskList = db.getAllTasks();
+        Collections.reverse(taskList);
+        tasksAdapter.setTask(taskList);
+
+        fab.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                AddNewTask.newInstance().show(getSupportFragmentManager(), AddNewTask.TAG);
+            }
+        });
+
+        return root;
+
+
+    }
+    @Override
+    public void handleDialogClose(DialogInterface dialog) {
+        taskList = db.getAllTasks();
+        Collections.reverse(taskList);
+        tasksAdapter.setTask(taskList);
+        tasksAdapter.notifyDataSetChanged();
+    }
+}
+
+ */
+
+public class ScheduleFragment extends FragmentActivity implements DialogCloseListener{
 
     private RecyclerView tasksRecyclerView;
     private ToDoAdapter tasksAdapter;

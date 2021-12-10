@@ -51,9 +51,16 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.services.calendar.Calendar;
+import com.google.api.services.calendar.CalendarScopes;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.io.InputStream;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -74,6 +81,17 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
         TextView nameView, emailView;
         private MutableLiveData<String> mText, eText;
         private GoogleSignInClient mGoogleSignInClient;
+
+        private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+        private static final String TOKENS_DIRECTORY_PATH = "tokens";
+
+        /**
+        * Global instance of the scopes required by this quickstart.
+        * If modifying these scopes, delete your previously saved tokens/ folder.
+        */
+        private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR_READONLY);
+        private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
+
 
 
 
@@ -333,6 +351,8 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
 
 
 
+
+
             return v;
         }
 
@@ -347,7 +367,7 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         mText.setValue("Sign in with Google");
-                        eText.setValue("In the Settings Tab");
+                        eText.setValue("In the Settings tab");
                         updateUI(null);
                     }
                 });
@@ -433,8 +453,8 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
                 //imgProfilePic.setImageBitmap(ImageHelper.getRoundedCornerBitmap(getContext(),icon, 200, 200, 200, false, false, false, false));
                 signInButton.setVisibility(View.VISIBLE);
                 signOutButton.setVisibility(View.GONE);
-                mText.setValue("Sign in to Google");
-                eText.setValue("in the Settings Tab");
+                mText.setValue("Sign in with Google");
+                eText.setValue("In the Settings Tab");
             }
         }
 

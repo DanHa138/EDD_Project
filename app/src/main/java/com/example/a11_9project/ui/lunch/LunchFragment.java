@@ -9,15 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.a11_9project.R;
 import com.example.a11_9project.databinding.FragmentLunchBinding;
-
+/*
 public class LunchFragment extends Fragment {
 
-    private LunchViewModel LunchViewModel;
-    private FragmentLunchBinding binding;
+    //private LunchViewModel LunchViewModel;
+    //private FragmentLunchBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -41,5 +43,32 @@ public class LunchFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+}
+
+ */
+public class LunchFragment extends Fragment{
+
+    private MutableLiveData<String> mText;
+
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View root = inflater.inflate(R.layout.fragment_lunch, container, false);
+
+        TextView textView = root.findViewById(R.id.text_lunch);
+
+        mText = new MutableLiveData<>();
+
+        mText.observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                textView.setText(s);
+            }
+        });
+
+        mText.setValue("This is lunch schedule fragment");
+
+
+        return root;
     }
 }

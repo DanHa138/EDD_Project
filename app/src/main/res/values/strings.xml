@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Companion App</string>
+    <string name="app_name">Counselor</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Sign In with Google</string>
+    <string name="nav_header_subtitle">in the Settings Tab</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -76,4 +76,22 @@
          from https://console.developers.google.com/ -->
     <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
     <string name="name">Name :</string>
+
+    <string name="accounts">Accounts</string>
+    <string name="description_add">Add Calendar</string>
+    <string name="summary">Title</string>
+    <string name="summary_hint">Enter the calendar title</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="icon_desc">Application icon</string>
+    <string name="title_separator_desc">Title separator</string>
+    <string name="refresh">Refresh</string>
+    <string name="batchadd">Copy Calendar x3 (Batch)</string>
+    <string name="edit">Edit Calendar</string>
+    <string name="delete">Delete Calendar</string>
+    <string name="delete_title">Delete Calendar?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
 </resources>

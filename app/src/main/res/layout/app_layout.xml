@@ -72,6 +72,7 @@
             android:textColor="@color/white"
             android:background="@drawable/btn_on_click"
             android:drawableEnd="@drawable/ic_baseline_play_arrow"
+            android:id="@+id/permBtn"
             android:onClick="setPermission"/>
 
 

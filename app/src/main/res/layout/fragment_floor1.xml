@@ -4,30 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.lunch.LunchFragment">
+    tools:context=".ui.schoolmap.SchoolMapFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_breakfast"
-        tools:layout_editor_absoluteX="-156dp"
-        tools:layout_editor_absoluteY="205dp" />
+        app:srcCompat="@drawable/ic_floor_1"/>
 
     <Button
-        android:id="@+id/toLunch"
+        android:id="@+id/toFloor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Lunch Menu"
+        android:text="Floor 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/toHome1"
+        android:id="@+id/toHome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

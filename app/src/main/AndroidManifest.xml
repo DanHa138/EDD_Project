@@ -50,6 +50,15 @@
         <activity
             android:name=".ui.events.EventsFragment"/>
         <activity
+            android:name=".ui.lunch.LunchFragment"
+            android:screenOrientation="userLandscape"/>
+        <activity android:name=".ui.lunch.FoodFragment"
+            android:screenOrientation="userLandscape"/>
+        <activity android:name=".ui.schoolmap.SchoolMapFragment"
+            android:screenOrientation="userLandscape"/>
+        <activity android:name=".ui.schoolmap.FloorFragment"
+            android:screenOrientation="userLandscape"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:label="@string/app_name"

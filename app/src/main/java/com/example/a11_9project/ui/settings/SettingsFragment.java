@@ -12,6 +12,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,7 +72,7 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
         private int RC_SIGN_IN = (int) (Math.random()*100);
         //private GoogleApiClient mGoogleApiClient;
         private SignInButton signInButton;
-        private Button signOutButton;
+        private Button signOutButton, addCalButton;
         private Button disconnectButton;
         private LinearLayout signOutView;
         private TextView mStatusTextView, mName, mEmail;
@@ -279,6 +280,7 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
 
             signInButton = (SignInButton) v.findViewById(R.id.sign_in_button);
             signOutButton = (Button) v.findViewById(R.id.sign_out_button);
+            addCalButton = v.findViewById(R.id.calBth);
             //imgProfilePic = (ImageView) v.findViewById(R.id.img_profile_pic);
 
             /*
@@ -348,6 +350,20 @@ public class SettingsFragment extends Fragment implements GoogleApiClient.OnConn
                      */
                 }
             });
+
+            addCalButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Intent i = new Intent(Intent.ACTION_ALL_APPS);
+                    //i.setType();
+                    //startActivity(new Intent(Settings.ACTION_SYNC_SETTINGS));
+                    Intent i = new Intent(Intent.ACTION_EDIT);
+                    i.setType("vnd.android.cursor.item/");
+                    startActivity(i);
+                }
+            });
+
+
 
 
 

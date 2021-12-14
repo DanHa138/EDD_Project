@@ -52,14 +52,17 @@
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/app_bar_main.xml" value="0.176" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/app_layout.xml" value="0.1" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/calendarlist.xml" value="0.264" />
-        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/content_main.xml" value="0.2" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar.xml" value="0.2" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_calendar_details.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_events.xml" value="0.10260416666666666" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_gallery.xml" value="0.10260416666666666" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_home.xml" value="0.12833876221498372" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_schedule.xml" value="0.25" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_schoolmap.xml" value="0.25" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/fragment_settings.xml" value="0.536" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/layout_apps.xml" value="0.25" />
+        <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/new_task.xml" value="0.10260416666666666" />
         <entry key="..\:/Users/super/StudioProjects/EDD_Project/app/src/main/res/layout/task_layout.xml" value="0.1" />

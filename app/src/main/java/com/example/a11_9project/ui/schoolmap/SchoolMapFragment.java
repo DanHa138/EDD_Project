@@ -1,4 +1,4 @@
-package com.example.a11_9project.ui.lunch;
+package com.example.a11_9project.ui.schoolmap;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,14 +7,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.a11_9project.R;
-import com.example.a11_9project.databinding.FragmentLunchBinding;
+
 /*
 public class LunchFragment extends Fragment {
 
@@ -47,15 +45,15 @@ public class LunchFragment extends Fragment {
 }
 
  */
-public class LunchFragment extends Fragment{
+public class SchoolMapFragment extends Fragment{
 
     private MutableLiveData<String> mText;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View root = inflater.inflate(R.layout.fragment_schoolmap, container, false);
+        View root = inflater.inflate(R.layout.fragment_lunch, container, false);
 
-        TextView textView = root.findViewById(R.id.text_schoolmap);
+        TextView textView = root.findViewById(R.id.text_lunch);
 
         mText = new MutableLiveData<>();
 

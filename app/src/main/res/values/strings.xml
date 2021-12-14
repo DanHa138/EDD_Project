@@ -15,6 +15,7 @@
     <string name="menu_lunch">Lunch Schedule</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_gallery">Gallery</string>
+    <string name="menu_schoolmap">School Map</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -94,4 +95,5 @@
     <string name="no">No</string>
     <string name="error">Error</string>
     <string name="error_format">[Error] %s</string>
+
 </resources>

@@ -39,6 +39,7 @@ import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
@@ -118,7 +119,7 @@ public class CalendarFragment extends Fragment {
 
     private ArrayList<String> eventsList = new ArrayList<>();
     private ArrayAdapter<String> eventsListAdapter;
-    private FloatingActionButton mAddEvent;
+    private FloatingActionButton mAddEvent, mRefresh;
     private SwipeRefreshLayout swipeRefreshLayout;
 
     private static final String APPLICATION_NAME = "Companion App";
@@ -146,6 +147,7 @@ public class CalendarFragment extends Fragment {
         binding = FragmentCalendarBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
         mText = new MutableLiveData<>();
 
         final TextView textView = binding.textCalendar;
@@ -161,6 +163,7 @@ public class CalendarFragment extends Fragment {
         mCalendarView = (CalendarView) root.findViewById(R.id.calendarView);
         mListView = root.findViewById(R.id.listView);
         mAddEvent = root.findViewById(R.id.addEventBtn);
+        //mRefresh = root.findViewById(R.id.refreshBtn);
 
         eventsListAdapter = new ArrayAdapter<>
                 (CalendarFragment.this.getContext(), android.R.layout.simple_list_item_1, eventsList);
@@ -326,6 +329,35 @@ public class CalendarFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        /*
+
+        mRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent i = new Intent(getActivity(), );
+                //startActivity(i);
+
+                //Fragment frg = null;
+                //frg = getChildFragmentManager().findFragmentByTag("Your_Fragment_TAG");
+                //final FragmentTransaction ft = getChildFragmentManager().beginTransaction();
+                //ft.detach(frg);
+                //ft.attach(frg);
+                //ft.commit();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                if (Build.VERSION.SDK_INT >= 26) {
+                    ft.setReorderingAllowed(false);
+                }
+                ft.detach(getTargetFragment()).attach(getTargetFragment()).commit();
+
+            }
+        });
+
+
+
+         */
+
+
 
 
 

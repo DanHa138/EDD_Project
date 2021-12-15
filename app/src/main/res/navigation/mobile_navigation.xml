@@ -41,13 +41,13 @@
         android:label="@string/menu_scheduler"
         tools:layout="@layout/fragment_schedule" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_lunch"
         android:name="com.example.a11_9project.ui.lunch.LunchFragment"
         android:label="@string/menu_lunch"
         tools:layout="@layout/fragment_lunch" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_schoolmap"
         android:name="com.example.a11_9project.ui.schoolmap.SchoolMapFragment"
         android:label="@string/menu_schoolmap"

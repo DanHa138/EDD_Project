@@ -1,40 +1,32 @@
-package com.example.a11_9project.ui.schoolmap;
+package com.example.a11_9project.ui.lunch;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 
 import com.example.a11_9project.MainActivity;
 import com.example.a11_9project.R;
-import com.example.a11_9project.ui.lunch.FoodFragment;
 
-public class SchoolMapFragment extends AppCompatActivity {
+public class FoodFragment extends AppCompatActivity {
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_floor1);
+        setContentView(R.layout.fragment_food);
 
-        button = findViewById(R.id.toFloor2);
+        button = findViewById(R.id.toBreakfast);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFloor2();
+                openBreakfastMenu();
             }
         });
 
-        button = findViewById(R.id.toHome3);
+        button = findViewById(R.id.toHome2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,8 +35,8 @@ public class SchoolMapFragment extends AppCompatActivity {
         });
     }
 
-    public void openFloor2(){
-        Intent intent = new Intent(this, FloorFragment.class);
+    public void openBreakfastMenu(){
+        Intent intent = new Intent(this, LunchFragment.class);
         startActivity(intent);
     }
 

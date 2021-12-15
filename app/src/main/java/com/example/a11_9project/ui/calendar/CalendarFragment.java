@@ -216,6 +216,84 @@ public class CalendarFragment extends Fragment {
                         String event = "Title: " + cursor.getString(1)
                                 + "\nDue Date: " + (new Date(cursor.getLong(3)))
                                 .toString();
+
+                        if((new Date(cursor.getLong(3))).toString().contains("19:00:00 EST")) {
+                            if ((new Date(cursor.getLong(4))).toString().contains("19:00:00 EST")) {
+                                //event = "Title: " + cursor.getString(1)
+                                //        + "\nWhole Day Event: " +(month +1)+ "/" + dayOfMonth + "/"
+                                //        + year;
+                                event = null;
+                                /*
+                                if(!cursor.getString(2).isEmpty()){
+                                    event = "Title: " + cursor.getString(1)
+                                            + "\nWhole Day Assignment: " +(month +1)+ "/" + dayOfMonth + "/"
+                                            + year;
+                                }
+
+                                 */
+                            }
+
+                        }
+                        String data = cursor.getString(2);
+                        boolean inAlready = false;
+                        if(!eventsList.isEmpty())
+                        {
+
+                            for(int loop = 0; loop < eventsList.size() && !inAlready; loop++)
+                            {
+                                if(eventsList.get(loop).toString().equals(event))
+                                {
+                                    inAlready = true;
+                                }
+                            }
+
+                        }
+
+                        if(!inAlready && event != null)
+                        {
+                            eventsList.add(event);
+                            dayEvents.add(data);
+
+
+                        }
+
+
+                        //Toast.makeText( view.getContext().getApplicationContext(), "Title: " + cursor.getString(1) + " Start-Time: " + (new Date(cursor.getLong(3))).toString(), Toast.LENGTH_LONG ).show();
+
+                        eventsListAdapter.notifyDataSetChanged();
+                    } while ( cursor.moveToNext());
+                }
+
+                //to account for whole day events and assignments
+
+                projection = new String[] { CalendarContract.Events.CALENDAR_ID, CalendarContract.Events.TITLE, CalendarContract.Events.DESCRIPTION, CalendarContract.Events.DTSTART, CalendarContract.Events.DTEND, CalendarContract.Events.ALL_DAY, CalendarContract.Events.EVENT_LOCATION };
+
+                // 0 = January, 1 = February, ...
+
+                startTime = java.util.Calendar.getInstance();
+                startTime.set(year,month,dayOfMonth+1,00,00);
+
+                endTime= java.util.Calendar.getInstance();
+                endTime.set(year,month,dayOfMonth+1,23,59);
+
+                // the range is based on the click date
+
+                selection = "(( " + CalendarContract.Events.DTSTART + " >= " + startTime.getTimeInMillis() + " ) AND ( " + CalendarContract.Events.DTSTART + " <= " + endTime.getTimeInMillis() + " ))";
+
+                cursor = view.getContext().getContentResolver().query( CalendarContract.Events.CONTENT_URI, projection, selection, null, null );
+
+                // output the events
+
+
+
+
+
+                if (cursor.moveToFirst()) {
+                    do {
+                        String event = null;
+                        //String event = "Title: " + cursor.getString(1)
+                        //        + "\nDue Date: " + (new Date(cursor.getLong(3)))
+                        //        .toString();
                         if((new Date(cursor.getLong(3))).toString().contains("19:00:00 EST")) {
                             if ((new Date(cursor.getLong(4))).toString().contains("19:00:00 EST")) {
                                 event = "Title: " + cursor.getString(1)
@@ -243,7 +321,7 @@ public class CalendarFragment extends Fragment {
 
                         }
 
-                        if(!inAlready)
+                        if(!inAlready && event != null)
                         {
                             eventsList.add(event);
                             dayEvents.add(data);
